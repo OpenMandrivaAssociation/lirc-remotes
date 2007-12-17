@@ -13,7 +13,6 @@ Source0:	http://www.lirc.org/%{name}.tar.bz2
 Source1:	lirc-remotes-qsonic.tar.bz2
 URL:		http://www.lirc.org/
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires:	lirc >= %{version}
 
 %description
