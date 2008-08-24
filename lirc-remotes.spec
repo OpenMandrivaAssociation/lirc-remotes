@@ -11,9 +11,12 @@ License:	GPL
 Group:		System/Kernel and hardware
 Source0:	http://www.lirc.org/remotes.tar.bz2
 Source1:	lirc-remotes-qsonic.tar.bz2
+Source2:	lirc-fixup-keys.c
+Source3:	http://d.gardon.free.fr/vase/lirc/full/nns_full.txt
 URL:		http://www.lirc.org/
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	glib2-devel
 Requires:	lirc >= %{version}
 
 %description
@@ -24,9 +27,14 @@ This package contains configuration files for many remotes
 supported by lirc.
 
 %prep
-%setup -q -c -b 0 -n remotes -a 1
+%setup -q -T -c -b 0 -n remotes -a 1 
+cp %{SOURCE2} %{SOURCE3} .
 
 %build
+
+gcc -o lirc-fixup-keys lirc-fixup-keys.c `pkg-config --libs --cflags glib-2.0`
+
+./lirc-fixup-keys nns_full.txt remotes
 
 %install
 rm -rf $RPM_BUILD_ROOT
