@@ -1,6 +1,6 @@
 %define	name	lirc-remotes
 %define	version 0.8.3
-%define	rel	0.20080704.3
+%define	rel	0.20080704.4
 %define	release	%mkrel %{rel}
 
 Summary:	Lirc remotes database
