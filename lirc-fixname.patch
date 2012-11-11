@@ -1,0 +1,291 @@
+diff -p -up remotes/remotes/aiwa/RC-950LE.fix remotes/remotes/aiwa/RC-950LE
+--- remotes/remotes/aiwa/RC-950LE.fix	1999-05-15 18:38:03.000000000 +0200
++++ remotes/remotes/aiwa/RC-950LE	2008-09-11 15:43:38.000000000 +0200
+@@ -18,7 +18,7 @@
+ 
+ begin remote
+ 
+-  name  AIWA
++  name  AIWA-RC-950LE
+   bits           42
+   flags SPACE_ENC|CONST_LENGTH
+   eps            60
+diff -p -up remotes/remotes/aiwa/RC-C202.fix remotes/remotes/aiwa/RC-C202
+--- remotes/remotes/aiwa/RC-C202.fix	2000-10-28 15:49:23.000000000 +0200
++++ remotes/remotes/aiwa/RC-C202	2008-09-11 15:43:38.000000000 +0200
+@@ -11,7 +11,7 @@
+ 
+ begin remote
+ 
+-  name  AIWA
++  name  AIWA-RC-C202
+   bits           42
+   flags SPACE_ENC|CONST_LENGTH
+   eps            30
+diff -p -up remotes/remotes/aiwa/RC-T501.fix remotes/remotes/aiwa/RC-T501
+--- remotes/remotes/aiwa/RC-T501.fix	1999-05-15 18:38:04.000000000 +0200
++++ remotes/remotes/aiwa/RC-T501	2008-09-11 15:43:38.000000000 +0200
+@@ -11,7 +11,7 @@
+ 
+ begin remote
+ 
+-  name  AIWA
++  name  AIWA-RC-T501
+   bits           15
+   flags SPACE_ENC|CONST_LENGTH
+   eps            30
+diff -p -up remotes/remotes/aiwa/RC-T770F.fix remotes/remotes/aiwa/RC-T770F
+--- remotes/remotes/aiwa/RC-T770F.fix	2004-07-04 17:49:17.000000000 +0200
++++ remotes/remotes/aiwa/RC-T770F	2008-09-11 15:43:38.000000000 +0200
+@@ -17,7 +17,7 @@
+ 
+ begin remote
+ 
+-  name  AIWA
++  name  AIWA-T770F
+   bits           16
+   flags SPACE_ENC
+   eps            25
+diff -p -up remotes/remotes/aiwa/RC-TG100.fix remotes/remotes/aiwa/RC-TG100
+--- remotes/remotes/aiwa/RC-TG100.fix	2002-12-02 20:40:38.000000000 +0100
++++ remotes/remotes/aiwa/RC-TG100	2008-09-11 15:43:38.000000000 +0200
+@@ -11,7 +11,7 @@
+ 
+ begin remote
+ 
+-  name  aiwa
++  name  AIWA-RC-TG100
+   bits           16
+   flags SPACE_ENC
+   eps            25
+diff -p -up remotes/remotes/aiwa/RC-TXG710.fix remotes/remotes/aiwa/RC-TXG710
+--- remotes/remotes/aiwa/RC-TXG710.fix	2003-06-07 14:18:26.000000000 +0200
++++ remotes/remotes/aiwa/RC-TXG710	2008-09-11 15:43:38.000000000 +0200
+@@ -11,7 +11,7 @@
+ 
+ begin remote
+ 
+-  name  AIWA
++  name  AIWA-RC-TXG710
+   bits           16
+   flags SPACE_ENC
+   eps            25
+diff -p -up remotes/remotes/aiwa/RC-ZAS01.fix remotes/remotes/aiwa/RC-ZAS01
+--- remotes/remotes/aiwa/RC-ZAS01.fix	2002-05-12 11:44:40.000000000 +0200
++++ remotes/remotes/aiwa/RC-ZAS01	2008-09-11 15:43:38.000000000 +0200
+@@ -10,7 +10,7 @@
+ 
+ begin remote
+ 
+-  name  aiwa
++  name  AIWA-RC-ZAS01
+   bits           16
+   flags SPACE_ENC|CONST_LENGTH
+   eps            30
+diff -p -up remotes/remotes/asus/lircd.conf.digimatrix.fix remotes/remotes/asus/lircd.conf.digimatrix
+--- remotes/remotes/asus/lircd.conf.digimatrix.fix	2005-09-06 19:12:17.000000000 +0200
++++ remotes/remotes/asus/lircd.conf.digimatrix	2008-09-11 15:43:38.000000000 +0200
+@@ -150,3 +150,155 @@ begin remote
+       end codes
+ 
+ end remote
++#
++# this config file was automatically generated
++# using lirc-0.7.0pre7(it87) on Sun Aug 29 17:33:17 2004
++#
++# contributed by 
++#
++# brand:                       ASUS
++# model no. of remote control: DigiMatrix
++# devices being controlled by this remote:
++#
++
++begin remote
++
++  name  ASUS_DigiMatrix
++  bits           16
++  flags SPACE_ENC
++  eps            30
++  aeps          100
++
++  header       8057  4071
++  one           479  1534
++  zero          479   531
++  ptrail        491
++  pre_data_bits   8
++  pre_data       0x35
++  gap          25647
++  toggle_bit      0
++
++
++      begin codes
++          up                       0x000000000000E817
++          down                     0x00000000000018E7
++          enter                    0x000000000000D02F
++          left                     0x0000000000009867
++          right                    0x00000000000058A7
++          1                        0x00000000000000FF
++          2                        0x000000000000807F
++          3                        0x00000000000040BF
++          4                        0x000000000000C03F
++          5                        0x00000000000020DF
++          6                        0x000000000000A05F
++          7                        0x000000000000609F
++          8                        0x000000000000E01F
++          9                        0x00000000000010EF
++          0                        0x000000000000906F
++          on_off                   0x000000000000B04F
++          dvd_vcd                  0x000000000000F00F
++          tv                       0x00000000000008F7
++          os_start                 0x00000000000030CF
++          photo                    0x00000000000048B7
++          home                     0x00000000000044BB
++          back                     0x000000000000A857
++          ch+                      0x000000000000B847
++          stop                     0x000000000000946B
++          play                     0x000000000000C43B
++          vol+                     0x000000000000F807
++          ch-                      0x0000000000007887
++          step-                    0x000000000000E41B
++          step+                    0x000000000000649B
++          vol-                     0x00000000000004FB
++          pause                    0x00000000000024DB
++          pre                      0x00000000000014EB
++          next                     0x000000000000A45B
++          mute                     0x000000000000847B
++          rec                      0x000000000000D42B
++          subtitle                 0x000000000000C837
++          menu                     0x00000000000038C7
++          dvd_audio                0x00000000000050AF
++          ui_size                  0x0000000000008877
++          ui_on_off                0x00000000000028D7
++      end codes
++
++end remote
++
++
++#
++# this config file was automatically generated
++# using lirc-0.7.2(it87) on Sun Aug 28 18:13:15 2005
++#
++# contributed by 
++#
++# brand:                       ASUS
++# model no. of remote control: DigiMatrix Mark 2
++# devices being controlled by this remote:
++#
++
++begin remote
++
++  name  ASUS_DigiMatrixMk2
++  bits            8
++  flags SPACE_ENC
++  eps            30
++  aeps          100
++
++  header       2666  1378
++  one           260   741
++  zero          260   279
++  ptrail        251
++  pre_data_bits   1
++  pre_data       0x0
++  post_data_bits  8
++  post_data      0x3
++  gap          10826
++  min_repeat      1
++  toggle_bit      0
++
++
++      begin codes
++          power                    0x0000000000000084
++          tv_dvr                   0x0000000000000044
++          fm                       0x00000000000000C4
++          os_start                 0x0000000000000024
++          music                    0x00000000000000A4
++          pictures                 0x0000000000000064
++          video                    0x00000000000000E4
++          dvd_menu                 0x0000000000000014
++          up                       0x000000000000004C
++          down                     0x00000000000000E0
++          left                     0x0000000000000010
++          right                    0x0000000000000040
++          back                     0x00000000000000B4
++          ok                       0x0000000000000088
++          back_fwd                 0x0000000000000074
++          rew                      0x0000000000000094
++          play_pause               0x0000000000000054
++          fwd                      0x00000000000000D4
++          step-                    0x0000000000000098
++          stop                     0x0000000000000048
++          step+                    0x0000000000000090
++          vol+                     0x0000000000000058
++          vol-                     0x00000000000000D8
++          home                     0x00000000000000C8
++          ch+                      0x0000000000000050
++          ch-                      0x00000000000000D0
++          mute                     0x0000000000000038
++          rec                      0x0000000000000028
++          pc                       0x0000000000000030
++          1                        0x00000000000000B8
++          2                        0x00000000000000A8
++          3                        0x00000000000000B0
++          4                        0x0000000000000078
++          5                        0x0000000000000068
++          6                        0x0000000000000070
++          7                        0x00000000000000F8
++          8                        0x00000000000000E8
++          9                        0x00000000000000F0
++          0                        0x0000000000000018
++          ui_size                  0x0000000000000004
++          repeat                   0x0000000000000008
++      end codes
++
++end remote
+diff -p -up remotes/remotes/daeumling/SR200.fix remotes/remotes/daeumling/SR200
+--- remotes/remotes/daeumling/SR200.fix	2002-06-30 12:09:00.000000000 +0200
++++ remotes/remotes/daeumling/SR200	2008-09-11 15:43:38.000000000 +0200
+@@ -4,7 +4,7 @@
+ #
+ # contributed by     martin@red-raider.de
+ #
+-# brand:             Däumling
++# brand:             DÃ¤umling
+ # model:             SR200
+ # supported devices: Stereo Satellite Receiver
+ #
+diff -p -up remotes/remotes/mvision/FCIS7000E+.fix remotes/remotes/mvision/FCIS7000E+
+--- remotes/remotes/mvision/FCIS7000E+.fix	2006-09-29 22:07:31.000000000 +0200
++++ remotes/remotes/mvision/FCIS7000E+	2008-09-11 15:43:38.000000000 +0200
+@@ -11,7 +11,7 @@
+ 
+ begin remote
+ 
+-  name  Mvision_FCIS7000E+
++  name  Mvision_FCIS7000EPlus
+   bits           16
+   flags SPACE_ENC
+   eps            45
+diff -p -up remotes/remotes/one_for_all/URC-2510.fix remotes/remotes/one_for_all/URC-2510
+--- remotes/remotes/one_for_all/URC-2510.fix	2008-04-22 19:01:11.000000000 +0200
++++ remotes/remotes/one_for_all/URC-2510	2008-09-11 15:43:38.000000000 +0200
+@@ -11,7 +11,7 @@
+ 
+ begin remote
+ 
+-  name  OneForAll_URC-2510(12341)
++  name  OneForAll_URC-2510_12341
+   bits            8
+   flags SPACE_ENC
+   eps            30
+diff -p -up remotes/remotes/scientific_atlanta/RC-U49C+.fix remotes/remotes/scientific_atlanta/RC-U49C+
+--- remotes/remotes/scientific_atlanta/RC-U49C+.fix	2008-09-11 15:44:26.000000000 +0200
++++ remotes/remotes/scientific_atlanta/RC-U49C+	2008-09-11 15:44:30.000000000 +0200
+@@ -11,7 +11,7 @@
+ 
+ begin remote
+ 
+-  name  CheckMate_IV_RCU49C+
++  name  CheckMate_IV_RCU49CPlus
+   bits           22
+   flags SPACE_ENC|CONST_LENGTH
+   eps            30
