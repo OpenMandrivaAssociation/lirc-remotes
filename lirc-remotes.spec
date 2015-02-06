@@ -1,11 +1,11 @@
 %define	name	lirc-remotes
 %define	version 0.8.3
-%define	release	0.20130327.1
+%define release	0.20130327.2
 
 Summary:	Lirc remotes database
 Name:		lirc-remotes
 Version:	0.8.3
-Release:	0.20130327.1
+Release:	0.20130327.2
 License:	GPL
 Group:		System/Kernel and hardware
 Source0:	http://www.lirc.org/remotes.tar.bz2
