@@ -14,7 +14,7 @@ Source2:	lirc-fixup-keys.c
 Source3:	http://d.gardon.free.fr/vase/lirc/full/nns_full.txt
 # (fc) 0.8.3-0.20080704.3mdv fix remote names for files not parsed by gnome-lirc-properties
 Patch0:		lirc-fixname.patch
-URL:		http://www.lirc.org/
+URL:		https://www.lirc.org/
 BuildArch:	noarch
 BuildRequires:	glib2-devel
 Requires:	lirc >= %{version}
